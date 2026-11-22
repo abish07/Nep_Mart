@@ -13,7 +13,7 @@ function Login(){
         const newErrors = {};
         if(!email.trim()){
             newErrors.email = "Email is Required";
-        }else if(emailRegex.test(email)){
+        }else if(!emailRegex.test(email)){
             newErrors.email = "Invalid Email";
         }
         if(!password.trim()){
