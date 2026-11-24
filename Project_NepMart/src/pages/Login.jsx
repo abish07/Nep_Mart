@@ -7,9 +7,8 @@ function Login({email,setEmail}){
 
     // const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
     const inputClass = "w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-400";
-
+    
     const validate = () =>{
         const newErrors = {};
         if(!email.trim()){
@@ -42,7 +41,7 @@ function Login({email,setEmail}){
             <form
                 onSubmit={handleSubmit}
                 noValidate
-                className="bg-white p-6 rounded-lg shadow w-full max-w-sm space-y-4"
+                className = "bg-white p-6 rounded-lg shadow w-full max-w-sm space-y-4"
             >
             <h1 className="text-2xl font-bold text-center">Login</h1>
 
@@ -74,7 +73,8 @@ function Login({email,setEmail}){
 
             <button
                 type="submit"
-                className="w-full bg-red-600 text-white py-2 rounded hover:bg-red-700 cursor-pointer">
+                className="w-full bg-red-600 text-white py-2 rounded hover:bg-red-700 cursor-pointer"
+                >
                 Submit
             </button>
 

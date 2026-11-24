@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Home from './pages/Home'
 import Login from './pages/Login'
+import Signup from "./pages/Signup"
 import Navbar from "./components/Navbar";
 function App() {
   const [email,setEmail] = useState("");
@@ -8,9 +9,10 @@ function App() {
   const [page,setPage] = useState("home");
   return(
     <>
-      <Navbar onLogin={()=> setPage("login")} onHome={()=> setPage("home")}/>
-      {page=="login" && <Login email={email} setEmail={setEmail}/>}
-      {page=="home" && <Home />}
+      <Navbar onLogin={()=> setPage("login")} onHome={()=> setPage("home")} onSignup={()=> setPage("signup")}/>
+      {page==="login" && <Login email={email} setEmail={setEmail}/>}
+      {page==="home" && <Home />}
+      {page==="signup" && <Signup/>}
     </>
   )
 }
