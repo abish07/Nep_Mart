@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from "./pages/Signup"
 import Navbar from "./components/Navbar";
+import Footer from './components/Footer';
 function App() {
   const [email,setEmail] = useState("");
   //Email is set here instead of in Login as App is mounted all the time which will help the data stored in email not lost
@@ -13,6 +14,7 @@ function App() {
       {page==="login" && <Login email={email} setEmail={setEmail}/>}
       {page==="home" && <Home />}
       {page==="signup" && <Signup/>}
+      <Footer onLogin={()=>setPage("login")} onHome={()=>setPage("home")} onSignup={()=>setPage("signup")}/>
     </>
   )
 }
