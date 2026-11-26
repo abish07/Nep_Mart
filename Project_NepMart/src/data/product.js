@@ -1,11 +1,11 @@
-import dhoop from "../assets/dhoop.png"
-import shawl from "../assets/shawl.png"
-import lordMahakal from "../assets/lordMahakal.jpeg"
-import diyo from "../assets/diyo.jpg"
-import sweater from "../assets/woolenSweater.jpg"
-import mangoAchar from "../assets/mangoAchar.jpeg"
-import khukuri from "../assets/khukuri.jpeg"
-import carpet from "../assets/woolenCarpet.jpg"
+import dhoop from "../assets/productImages/dhoop.png"
+import shawl from "../assets/productImages/shawl.png"
+import lordMahakal from "../assets/productImages/lordMahakal.jpeg"
+import diyo from "../assets/productImages/diyo.jpg"
+import sweater from "../assets/productImages/woolenSweater.jpg"
+import mangoAchar from "../assets/productImages/mangoAchar.jpeg"
+import khukuri from "../assets/productImages/khukuri.jpeg"
+import carpet from "../assets/productImages/woolenCarpet.jpg"
 
 export const products = [
     {"id":1,"name":"Dhoop","price":120,"category":"Puja","image":dhoop,"isHot":false},
